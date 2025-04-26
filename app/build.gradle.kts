@@ -14,9 +14,20 @@ android {
         applicationId = "tv.tfiber.launcher"
         minSdk = 21
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.1.0"
-
+        versionCode = 38
+        versionName = "1.38"
+    }
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+        debug {
+            // Optionally, you can add specific configurations for the debug build type
+        }
     }
 
     signingConfigs {

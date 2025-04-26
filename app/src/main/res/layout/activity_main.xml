@@ -20,14 +20,14 @@
 
     <ImageView
         android:id="@+id/logoImage"
-        android:layout_width="480dp"
-        android:layout_height="130dp"
+        android:layout_width="580dp"
+        android:layout_height="140dp"
         android:focusable="false"
         android:src="@drawable/tfiber_png"
         app:layout_constraintBottom_toTopOf="@id/texture_view_container"
         app:layout_constraintEnd_toEndOf="@id/texture_view_container"
         app:layout_constraintStart_toStartOf="@id/texture_view_container"
-        android:translationY="15dp"/> <!-- Move image up -->
+        android:translationY="18dp"/> <!-- Move image up -->
 
     <ImageView
         android:id="@+id/bsnllogo"
@@ -190,18 +190,18 @@
 
         <LinearLayout
             android:id="@+id/bottomSection"
-            android:layout_width="880dp"
+            android:layout_width="860dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:orientation="vertical"
             android:gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_centerHorizontal="true"> 
 
             <ViewFlipper
                 android:id="@+id/imageFlipper"
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="105dp"
                 android:autoStart="true"
                 android:flipInterval="3000"
                 android:inAnimation="@android:anim/fade_in"
@@ -216,5 +216,42 @@
                 android:layout_marginTop="5dp"/>
         </LinearLayout>
     </RelativeLayout>
+
+
+    <!-- Loading Overlay -->
+    <View
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="76sp"
+        android:layout_gravity="center" />
+
+    <!-- Loading Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/loadingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="76sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/livetv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

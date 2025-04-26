@@ -74,13 +74,13 @@
 
     <ImageView
         android:id="@+id/telanganaImage"
-        android:layout_width="900dp"  
+        android:layout_width="850dp"
         android:layout_height="130dp"
         android:src="@drawable/educations"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:translationY="-10dp"
+        android:translationY="40dp"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- RecyclerView -->
@@ -92,7 +92,7 @@
         app:layout_constraintStart_toStartOf="@id/topBanner"
         app:layout_constraintEnd_toEndOf="@id/topBanner"
         android:translationX="1dp"
-        android:translationY="110dp" />
+        android:translationY="160dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

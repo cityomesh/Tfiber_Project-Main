@@ -77,13 +77,13 @@
 
     <ImageView
         android:id="@+id/telanganaImage"
-        android:layout_width="900dp"  
+        android:layout_width="850dp"
         android:layout_height="130dp"
         android:src="@drawable/gamestelangana"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:translationY="-10dp"
+        android:translationY="-30dp"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- RecyclerView -->
